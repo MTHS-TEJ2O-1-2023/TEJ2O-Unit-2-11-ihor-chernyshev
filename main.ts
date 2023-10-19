@@ -24,11 +24,11 @@ input.onButtonPressed(Button.B, function () {
 input.onGesture(Gesture.Shake, function () {
   if (randomNumberOne > randomNumberTwo) {
     basic.showString('1st < 2nd')
-    }
+  }
   else {
     basic.showString('1st > 2nd')
-    }
+  }
   if (randomNumberOne === randomNumberTwo) {
     basic.showString('1st = 2nd')
-    }
+  }
 })
