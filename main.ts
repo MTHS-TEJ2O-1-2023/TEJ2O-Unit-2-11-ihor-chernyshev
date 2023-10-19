@@ -4,7 +4,6 @@
  * Created on: Oct 2023
  * This program ...
 */
-
 let randomNumberOne = randint(0, 99)
 let randomNumberTwo = randint(0, 99)
 
@@ -22,10 +21,13 @@ input.onButtonPressed(Button.B, function () {
 })
 
 input.onGesture(Gesture.Shake, function () {
-  if (randomNumberOne > randomNumberOne){
-    basic.showString("1st < 2nd")
+  if (randomNumberOne > randomNumberTwo) {
+    basic.showString('1st < 2nd')
   }
-  else{
-    basic.showString("1st > 2nd")
+  else {
+    basic.showString('1st > 2nd')
+  }
+  if (randomNumberOne === randomNumberTwo) {
+    basic.showString('1st = 2nd')
   }
 })
