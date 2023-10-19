@@ -1,8 +1,31 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: Mr. Coxall
- * Created on: Sep 2020
+ * Created by: Ihor Chernyshev
+ * Created on: Oct 2023
  * This program ...
 */
 
-basic.showString('Hello, World!')
+let randomNumberOne = randint(0, 99)
+let randomNumberTwo = randint(0, 99)
+
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+
+input.onButtonPressed(Button.A, function () {
+  basic.showNumber(randomNumberOne)
+  basic.showIcon(IconNames.Happy)
+})
+
+input.onButtonPressed(Button.B, function () {
+  basic.showNumber(randomNumberTwo)
+  basic.showIcon(IconNames.Happy)
+})
+
+input.onGesture(Gesture.Shake, function () {
+  if (randomNumberOne > randomNumberOne){
+    basic.showString("1st < 2nd")
+  }
+  else{
+    basic.showString("1st > 2nd")
+  }
+})
