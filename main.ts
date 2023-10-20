@@ -5,8 +5,8 @@
  * This program ...
 */
 
-const randomNumberOne = randint(0, 99)
-const randomNumberTwo = randint(0, 99)
+let randomNumberOne = randint(0, 99)
+let randomNumberTwo = randint(0, 99)
 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
