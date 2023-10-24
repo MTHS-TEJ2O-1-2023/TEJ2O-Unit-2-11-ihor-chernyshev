@@ -12,21 +12,21 @@ basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
-  basic.showString('# 1 :' + (randomNumberOne).toString())
+  basic.showString('# 1 :' + randomNumberOne.toString())
   basic.showIcon(IconNames.Happy)
 })
 
 input.onButtonPressed(Button.B, function () {
-  basic.showString('#2 :' + (randomNumberTwo).toString())
+  basic.showString('#2 :' + randomNumberTwo.toString())
   basic.showIcon(IconNames.Happy)
 })
 
 input.onGesture(Gesture.Shake, function () {
   if (randomNumberOne > randomNumberTwo) {
-    basic.showString((randomNumberOne).toString() + '>' + (randomNumberTwo).toString())
+    basic.showString(randomNumberOne.toString() + '>' + randomNumberTwo.toString())
     basic.showIcon(IconNames.Sad)
   } else {
-    basic.showString((randomNumberOne).toString() + '<' + (randomNumberTwo).toString())
+    basic.showString(randomNumberOne.toString() + '<' + randomNumberTwo.toString())
     basic.showIcon(IconNames.Sad)
   }
 })
