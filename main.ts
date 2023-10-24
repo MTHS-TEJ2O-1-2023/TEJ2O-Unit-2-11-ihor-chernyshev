@@ -23,8 +23,10 @@ input.onButtonPressed(Button.B, function () {
 
 input.onGesture(Gesture.Shake, function () {
   if (randomNumberOne > randomNumberTwo) {
-    basic.showString((randomNumberOne).toString() + '>' + (randomNumberTwo).toString() + '')
+    basic.showString((randomNumberOne).toString() + '>' + (randomNumberTwo).toString())
+    basic.showIcon(IconNames.Sad)
   } else {
-    basic.showString((randomNumberOne).toString() + '<' + (randomNumberTwo).toString() + '')
+    basic.showString((randomNumberOne).toString() + '<' + (randomNumberTwo).toString())
+    basic.showIcon(IconNames.Sad)
   }
 })
