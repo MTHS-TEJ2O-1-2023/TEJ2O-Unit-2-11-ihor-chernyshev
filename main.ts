@@ -12,12 +12,12 @@ basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
-  basic.showString('# 1 :' + (randomNumberOne).toString() + '')
+  basic.showString('# 1 :' + (randomNumberOne).toString())
   basic.showIcon(IconNames.Happy)
 })
 
 input.onButtonPressed(Button.B, function () {
-  basic.showString('#2 :' + (randomNumberTwo).toString() + '')
+  basic.showString('#2 :' + (randomNumberTwo).toString())
   basic.showIcon(IconNames.Happy)
 })
 
