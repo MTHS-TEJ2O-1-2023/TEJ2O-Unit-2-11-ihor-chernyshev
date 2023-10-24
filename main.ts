@@ -24,9 +24,7 @@ input.onButtonPressed(Button.B, function () {
 input.onGesture(Gesture.Shake, function () {
   if (randomNumberOne > randomNumberTwo) {
     basic.showString((randomNumberOne).toString() + '>' + (randomNumberTwo).toString() + '')
-    }
-
-  else {
+  } else {
     basic.showString((randomNumberOne).toString() + '<' + (randomNumberTwo).toString() + '')
   }
 })
