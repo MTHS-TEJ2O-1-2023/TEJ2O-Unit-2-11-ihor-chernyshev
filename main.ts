@@ -6,18 +6,18 @@
 */
 
 const rno = randint(0, 99)
-const rnt= randint(0, 99)
+const rnt = randint(0, 99)
 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
-  basic.showString('# 1 :' + rno.toString())
+  basic.showString('# 1 :' + (rno).toString())
   basic.showIcon(IconNames.Happy)
 })
 
 input.onButtonPressed(Button.B, function () {
-  basic.showString('#2 :' + rnt.toString())
+  basic.showString('#2 :' + (rnt).toString())
   basic.showIcon(IconNames.Happy)
 })
 
