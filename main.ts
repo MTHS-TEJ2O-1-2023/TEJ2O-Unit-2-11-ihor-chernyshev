@@ -2,7 +2,7 @@
  *
  * Created by: Ihor Chernyshev
  * Created on: Oct 2023
- * This program ...
+ * This program compares random numbers on MicroBit
 */
 
 // crearing numbers
