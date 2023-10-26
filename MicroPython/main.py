@@ -25,7 +25,7 @@ while True:
         display.scroll("# 2 :" + str(randomNumberTwo))
         display.show(Image.HAPPY)
     # shows which number is bigger
-    if accelerometer.was_gesture(""shake"):
+    if accelerometer.was_gesture("shake"):
         if randomNumberOne > randomNumberTwo:
             display.scroll(str(randomNumberOne) + ">" + str(randomNumberTwo))
             display.show(Image.SAD)
