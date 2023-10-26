@@ -27,15 +27,17 @@ input.onButtonPressed(Button.B, function () {
   basic.showIcon(IconNames.Happy)
 })
 
-// shows which number is bigger 
+// shows which number is bigger
 input.onGesture(Gesture.Shake, function () {
   if (randomNumberOne > randomNumberTwo) {
     basic.clearScreen()
     basic.showNumber(randomNumberOne); basic.showString('>'); basic.showNumber(randomNumberTwo)
+    basic.clearScreen()
     basic.showIcon(IconNames.Sad)
   } else {
     basic.clearScreen()
     basic.showNumber(randomNumberOne); basic.showString('<'); basic.showNumber(randomNumberTwo)
+    basic.clearScreen()
     basic.showIcon(IconNames.Sad)
   }
 })
