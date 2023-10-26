@@ -18,12 +18,17 @@ display.show(Image.HAPPY)
 while True:
     # shows #1
     if button_a.was_pressed():
-        display.show("# 1 :" + str(randomNumberOne))
+        display.scroll("# 1 :" + str(randomNumberOne))
+        display.show(Image.HAPPY)
     # shows #2
     if button_b.was_pressed():
-        display.show("# 2 :" + str(randomNumberTwo))
+        display.scroll("# 2 :" + str(randomNumberTwo))
+        display.show(Image.HAPPY)
     # shows which number is bigger
-    if randomNumberOne > randomNumberTwo:
-        display.show(str(randomNumberOne) + ">" + str(randomNumberTwo))
-    else:
-        display.show(str(randomNumberOne) + "<" + str(randomNumberTwo))
+    if accelerometer.was_gesture('shake'):
+        if randomNumberOne > randomNumberTwo:
+            display.scroll(str(randomNumberOne) + ">" + str(randomNumberTwo))
+            display.show(Image.SAD)
+        else:
+            display.scroll(str(randomNumberOne) + "<" + str(randomNumberTwo))
+            display.show(Image.SAD)
