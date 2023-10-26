@@ -1,7 +1,7 @@
 """
 Created by: Ihor Chernyshev
 Created on: Oct 25
-This module is a Micro:bit MicroPython program
+This program compare random nubers on MicroBit
 """
 
 from microbit import *
