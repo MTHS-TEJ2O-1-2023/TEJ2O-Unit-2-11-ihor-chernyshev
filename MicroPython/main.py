@@ -1,7 +1,7 @@
 """
 Created by: Ihor Chernyshev
 Created on: Oct 25
-This program compares random numbers on MicroBit
+This program compare random numbers on MicroBit
 """
 
 from microbit import *
