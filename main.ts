@@ -32,10 +32,12 @@ input.onGesture(Gesture.Shake, function () {
   if (randomNumberOne > randomNumberTwo) {
     basic.clearScreen()
     basic.showNumber(randomNumberOne); basic.showString('>'); basic.showNumber(randomNumberTwo)
+    basic.clearScreen()
     basic.showIcon(IconNames.Sad)
   } else {
     basic.clearScreen()
     basic.showNumber(randomNumberOne); basic.showString('<'); basic.showNumber(randomNumberTwo)
+    basic.clearScreen()
     basic.showIcon(IconNames.Sad)
   }
 })
